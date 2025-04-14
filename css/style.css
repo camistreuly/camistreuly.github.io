@@ -316,7 +316,7 @@ nav a:hover, #name:hover {
 }
 
 #cami {
-    min-width: 550px;
+    /* min-width: 550px; */
     /* align-self: center; */
     /* margin-bottom: 80px; */
     height: auto;
@@ -611,6 +611,13 @@ img.process-image {
     max-height: calc(100vh - 100px);
     margin: auto;
     padding: 40px;
+}
+
+@media (max-width: 650px) {
+    img.process-image {
+        max-width: 90%;
+        padding: 40px 0px;
+    }
 }
 
 h3, .project-subheading {
