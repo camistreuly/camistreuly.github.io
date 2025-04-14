@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        
+        <link rel="stylesheet" type="text/css" href="./build/output.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="js/projects.js" defer></script>
+        <script src="js/main.js" defer></script>
+        <script type="module" src="./react-setup/dist/assets/index-Cxdz7Zbo.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <nav> 
+                <a href="index.html" id="name">cami streuly</a>
+                <div id="gag-nav"></div>
+                <a href="about.html">about</a>
+            </nav>
+
+            <div id="project-content">
+                <img id="project-image" src="assets/project-images/orientecho.png" alt="">
+                <h1 id="project-title-with-sub">OrientEcho</h1>
+                <h4 id="project-subtitle" class="border-box">An XR Assistive Orientation System: Motivating Exploration in Schenley Park for Visually-Impaired People</h4>
+                
+                <div id="project-description"> 
+                    <div id="details" class="border-box">
+                        <div>
+                            <p>
+                                <span class="bold line-padding">Role</span> <br>
+                                Experience + Interaction Designer <br>
+                                Physical + Digital Prototyping <br>
+                                User Research + Testing <br>
+                                Concept Development 
+
+                            </p>
+                        </div>
+                        <div>
+                            <p><span class="bold line-padding">Collaborators</span> <br>
+                            Katie Makarska <br> Shirley Du </p>
+                            
+                        </div>
+                        <div>
+                            <p>
+                                <span class="bold line-padding">Timeline</span> <br>
+                                7 weeks
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="short-description border-box">
+                        <p>
+                            OrientEcho is an exploratory design project aimed at increasing accessibility
+                            for visually-impaired individuals in Pittsburgh's Schenley Park. It is an XR
+                            navigational assistive system for visually impaired individuals, designed to
+                            augment spatial awareness and empower exploration. Unlike traditional tools that
+                            impose strict wayfinding, OrientEcho prioritizes the freedom of discovery in
+                            navigating and experiencing Schenley Park. By leveraging spatial computing, it
+                            translates space into sound and understanding in real-time, enabling users to
+                            rediscover the world on their terms. The system incorporates a voice user
+                            interface for seamless interaction to enhance usability and freedom during
+                            navigation. OrientEcho relies on two pieces of hardware: AR glasses and a haptic wearable bracelet. 
+                        </p>
+        
+                        <div id="feature-list">
+                            <div class="title-description-box">
+                                <div class="title-box"> 
+                                    <p class="bold">Environmental snapshot</p> 
+                                </div>
+                                <div class="description-box"> 
+                                    <p>Provides users with an immediate, comprehensive overview of their
+                                    surroundings through verbal descriptions and a spatialized audio scan.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="title-description-box">
+                                <div class="title-box">
+                                    <p class="bold">Proximity-mapped haptic feedback</p>
+                                </div>
+                                <div class="description-box">
+                                    <p>Conveys spatial information via haptic vibration to keep the user oriented.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="title-description-box">
+                                <div class="title-box">
+                                    <p class="bold">Sound beacons</p> 
+                                </div>
+                                <div class="description-box">
+                                    <p>Localized pings at user set locations help users orient themselves toward
+                                    specific destinations using pings that become more frequent.</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="title-description-box">
+                                <div class="title-box">
+                                    <p class="bold">
+                                        Hazard alerts
+                                    </p> 
+                                </div>
+                                <div class="description-box"> 
+                                    <p>Notifies users about potential obstacles and hazards.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div id="features" class="border-box"> 
+                        <h3 class="project-subheading"> Features</h3>
+                        <h4>"Hey Echo, what's around me?"</h4>
+                        <h5>Environmental Snapshot</h5>
+                        <p> To orient the user, the environmental snapshot includes: </p>
+                        <ol>
+                            <li><span class="bold">Spatial Structure Description</span>: A spoken description of the environment,
+                            including shape of the terrain, spatial relationships, landmarks, obstacles, and
+                            pathways. This gives users a high-level mental image of their surroundings.</li>
+                            <li><span class="bold">Audio Scan</span>: Spatialized sound cues that simulate the positions and
+                            characteristics of objects or hazards in the environment, offering an intuitive
+                            sense of depth and direction.</li>
+                        </ol>  
+                        <figure>
+                            <img src="assets/orientecho/schenley-pano.png" alt="A path in Schenley Park with a lake to the left and a bridge ahead.">
+                            <figcaption>Example environment in Schenley Park.</figcaption>
+                        </figure>
+                    
+                        <h5>Spatial Structure Description</h5>
+                        <p id="spatial-structure">
+                            “A dirt and gravel path goes straight ahead. On the left, the path drops off
+                            sharply and the ground slopes down to a lake with trees around it. On the right,
+                            the terrain rises steeply along the path, with a set of stairs carved into the
+                            incline. They lead upward to a bridge on higher ground that passes over the
+                            path.”
+                        </p>
+                        <div id="video-x-description">
+                            <div class="text-video-box">
+                                <div class="text">
+                                    <h5>Spatialized Audio Scan</h5>
+                                    <p>
+                                        The audio scan is a left-to-right sweep of spatialized pings, with the volume
+                                        corresponding to the proximity of objects to simulate their locations—like a
+                                        sound emanating directly from each object. This feature uses spatialized sound
+                                        to convey the positions and characteristics of objects and obstacles in the
+                                        user's surroundings.
+                                    </p>
+                                    <p>
+                                        By mapping environmental elements to distinct audio cues, the system allows
+                                        users to "hear" the layout of their environment in a way that mirrors real-world
+                                        spatial relationships. The sounds' intensity and direction provide intuitive
+                                        cues about distance and orientation, helping users build an efficient and
+                                        accurate mental map of their surroundings.
+
+                                    </p>
+                                </div>
+                                <video width="320" height="240" controls>
+                                    <source src="assets/orientecho/audioscan-demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                                
+                            <div class="text-video-box">
+                                <div class="text">
+                                    <h5>Proximity-Mapped Haptic Feedback</h5>
+                                    <p>
+                                        The haptic wearable increases the intensity of vibrations as the user approaches
+                                        an obstacle. A light vibration indicates a distant object, while a stronger,
+                                        continuous vibration signals a nearby object. This feedback is designed to
+                                        provide continuity, helping the user maintain the mental map of their
+                                        surroundings. It acts as a tool for both exploration and orientation,
+                                        reinforcing the environmental layout and allowing users to stay aware of spatial
+                                        relationships as they navigate.
+                                    </p>
+                    
+                                </div>
+                                <video width="320" height="240" controls>
+                                    <source src="assets/orientecho/haptic-demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            
+                            <div class="text-video-box">
+                                <div class="text">
+                                    <h5>Sound Beacon</h5>
+                                    <p>
+                                        The Sound Beacon feature helps users navigate toward specific destinations
+                                        using localized audio cues. Users can set an anchor at a point of interest, like
+                                        a pond or tree, and the system emits a recurring sound (e.g., a “ding”) from the
+                                        direction of the anchor. The frequency or intensity of the sound increases as
+                                        users get closer, offering intuitive guidance. The surrounding obstacles
+                                        continue to trigger haptic feedback, to keep the user oriented.
+                                    </p>
+                                </div>
+                                <video width="320" height="240" controls>
+                                    <source src="assets/orientecho/sound-beacon-demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            
+                        </div>
+
+                        <h5>Hazard Alerts</h5>
+                        <p>
+                            The Hazard Alerts feature notifies users about potential obstacles to ensure a
+                            safe navigation experience. Hazards are classified as Low, Medium, or High based
+                            on their severity and are communicated through verbal descriptions, audio cues,
+                            and haptic feedback. The system addresses hazards in three key scenarios:
+                        </p>
+                        <ul>
+                            <li> <span class="bold">Static Obstacles (Proactive and Anchor-Related)</span>: The system
+                            continuously monitors for static obstacles, such as tree branches or uneven
+                            terrain, and notifies the user immediately upon detection. Additionally, when an
+                            anchor is set, the system highlights all static hazards between the user and
+                            their destination.</li>
+                            <ul>
+                                <li>Example: “There's a bench on the path 3 meters ahead. Move slightly to the
+                                    left to avoid it.”</li>
+                            </ul>
+                            <li><span class="bold">Dynamic Obstacles While Moving</span>: The system detects real-time, moving
+                                obstacles, like people, dogs, or squirrels, and alerts the user as they
+                                navigate toward the anchor.</li>
+                            <ul>
+                                <li>Example: “A cyclist is approaching from the right, 5 meters away. Please
+                                    stop and wait.”</li>
+                            </ul>
+                            <li> <span class="bold"> On-Demand Hazard Check </span>: Users can ask, “Are there any obstacles nearby?” and
+                                receive detailed updates about potential hazards in their immediate
+                                surroundings.</li>
+                        </ul>
+
+                    </div>
+                    
+                    <div class="border-box"> 
+                        <h3 class="project-subheading"> Research and Concept Development </h3>
+                        <p>To begin our project, we wanted to understand the aesthetic values present in
+                            parks for any visitors. To do so, we concept mapped the qualities we found
+                            relevant to parks.
+                        </p>
+                        <img src="assets/orientecho/aesthetic.png">
+                        <p>
+                            We pinpointed discovery and freedom as tenets to the park experience that we
+                            were interested in exploring. Through this, we began to toy with the idea of
+                            wayfinding and exploration as critical to the aesthetic experience in a park.
+                        </p>
+                        <p>
+                            To better understand the problem space, we conducted a literature review on
+                            current research surrounding the experiences of visually-impaired people’s (VIP)
+                            experiences in nature as well as existing navigational tools. Coupled with found
+                            testimonials, we derived the following insights:
+                        </p>
+                        <ul class="unbulleted">
+                            <li>
+                                Nature can provide a sense of freedom and independence, counter isolation, and
+                                evoke awe and wonder.
+                            </li>
+                            <li>
+                                VIPs value discovery and individual accomplishment in natural settings, some also value a feeling of risk. 
+                            </li>
+                            <li>
+                                Existing navigational tools are strict, limiting the autonomy of individuals with visual impairments and discouraging exploration and discovery. 
+                            </li>
+                            <li>
+                                Existing navigational tools do not adapt to un-mapped areas without pathways, leaving VIPs to navigate on their own.
+                            </li>
+                        </ul>
+                        
+                        <p>
+                            The aesthetic analysis and literature review led us to the following question:
+                        </p>
+                        <p class="bold">
+                            How might we enable those with visual impairments to explore and experience the
+                            beauty of nature on their own terms?
+                        </p>
+                        <p>
+                            Our team then brainstormed a wide array of concepts. Here are some of mine:
+                        </p>
+                        
+                        <img src="assets/orientecho/concept-sketches.png">
+
+                        <p>
+                            After evaluating the advantages, disadvantages, and necessary design
+                            considerations for each of our concepts, we chose the “exploratory orientation
+                            system” for its non-prescriptiveness, focusing on solely empowering discovery
+                            and appreciation of beauty, not defining it. This concept leverages spatial
+                            computing to provide landmark information to users, offering affordances like
+                            haptic and spatialized audio feedback that could be integrated into our design.
+                        </p>
+                        <p>
+                            Our previous literature review validated this concept: VIPs want to explore
+                            nature but not necessarily be guided. To do so, they need a sense of scale,
+                            dimension, and the landmarks around them--essentially, a map.
+                        </p>
+                    </div>
+
+                    <div class="border-box">
+                        <h3 class="project-subheading">Concept Elaboration </h3>
+                        <p>
+                            This prompted the question: <span class="bold">How can we provide or aid in the a VIP's development of a cognitive map?</span>
+                        </p>
+                        <p>
+                            Jain et al's 
+                            <a class="link" href="https://dl.acm.org/doi/abs/10.1145/3579496" target="_blank" rel="noopener noreferrer"> "I Want to Figure Things Out": Supporting Exploration in Navigation for People with Visual Impairments</a> provided us with the key insight that would
+                            help answer this question and shape our design. Visually impaired individuals
+                            need two kinds of spatial information to understand their environment:
+                        </p>
+                        <div class="text-columns">
+                            <div class="text-column">
+                                <h5 class="less-margin">Spatial Information</h5>
+                                <p><span class="bold">SHAPE</span> Represents the environment as a simplified "skeletal wireframe," outlining its boundaries and overall structure.</p>
+                                <p><span class="bold">LAYOUT</span> Describes the arrangement and positioning of objects within the environment.</p>
+                            </div>
+                        
+                            <div class="text-column">
+                                <h5 class="less-margin">Design Decision</h5>
+                                <p><span class="bold">SHAPE</span> Verbal descriptions of the surrounding environment and landmarks.</p>
+                                <p><span class="bold">LAYOUT</span> Spatialized audio scan that highlights the locations of the surrounding landmarks.</p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            However, the verbal feedback and spatialized audio only provide a static map of
+                            the user's environment. Once given a spatial “image,” we asked how we might keep
+                            updating the user with this spatial information as they are navigating:
+                        </p>
+                        <p>
+                            We found that haptic feedback was a ripe feature to leverage for that real-time
+                            updating. Thus, we developed the idea of proximity reactive haptic feedback,
+                            like an extension of a cane.
+                        </p>
+
+                        <h5>User Flows</h5>
+                        <p>To start understanding what the higher-level picture of this system would be,
+                            we created simple user flows to understand user-system interactions in key
+                            moments</p>
+                        <div class="images-box">
+                            <img src="assets/orientecho/user-flow-1.png">
+                            <img src="assets/orientecho/user-flow-2.png">
+                        </div>
+
+                        <h5>Initial Sketches</h5>
+                        <img src="assets/orientecho/initial-sketches.png">
+                            
+                    </div>
+
+                    <div class="border-box">
+                        <h3 class="project-subheading">Prototyping, Testing, and Iteration </h3>
+                        <div class="text-image-box">
+                            <div class="text-column">
+                                <h5>Prototypes</h5>
+                                <p class="bold"> Primitive Environmental Snapshot</p>
+                                <p>
+                                    To start making our concept tangible, we created a prototype of the “orientation
+                                    function” in which the user receives a verbal description of the environments
+                                    spatial structure and an audio scan of an artificial test environment.
+                                </p>
+
+                                <p class="bold"> Transcription </p>
+                                <p> “To your left, there's a small hill with trees on it. Straight ahead, a path
+                                runs forward and curves to the left. About 10 meters away, just past the trail,
+                                there's a pond slightly to your right. Beyond the pond, the ground flattens out
+                                with more trees.”</p>
+                                <p> *Series of “spatialized” pings that pan left to right and vary in volume
+                                corresponding to the distance of the object*</p>
+                                <br>
+                            </div>
+                            <div class="image-column">
+                                <figure>
+                                    <img src="assets/orientecho/ref-layout.png">
+                                    <figcaption>Artificial test layout.</figcaption>
+                                </figure>
+                            </div>  
+                        </div>
+                        <figure class="process-image">
+                            <img src="assets/orientecho/haptic-prototype-0.png">
+                            <figcaption>Haptic Prototype 1</figcaption>
+                        </figure>
+
+                        <div class="text-image-box">
+                            <div class="">
+                                <p class="bold"> Haptic Bracelet</p>
+                                <p>
+                                    The first prototype for the haptic wearable featured three levels of intensity
+                                    for haptic vibration that were mapped to distance. The bracelet would pulse at
+                                    regular intervals, changing intensity dynamically.
+                                </p>
+                                <p>
+                                    The first iteration included an ultrasonic ranger distance sensor, which was low
+                                    in acuity.
+                                </p>
+                            </div>
+                            <img src="assets/orientecho/haptic-graph-1.png" class="image-column">
+                        </div>
+                        <h5>Prototypes</h5>
+                        <p>
+                            Testing an accessibility tool in an academic setting came with logistical
+                            challenges. Recruiting visually impaired participants (VIPs) within a short
+                            timeframe proved difficult, raising concerns about extractive testing. Instead,
+                            we took a perhaps more unorthodox approach: testing sighted users. We had them
+                            listen to our audio prototypes and stretch their perceived spatial layouts. This
+                            helped refine how audio conveyed environmental structure. Additionally, we
+                            tested our haptic prototype with sighted users to assess how intuitively
+                            distance mapped to vibration intensity.
+                        </p>
+
+                        <div class="figure-box">
+                            <figure>
+                                <img src="assets/orientecho/ref-layout.png">
+                                <figcaption>Reference layout.</figcaption>
+                            </figure>
+                        
+                            <figure>
+                                <img src="assets/orientecho/user-sketch-1.png">
+                                <figcaption>User sketch 1.</figcaption>
+                            </figure>
+                        
+                        
+                            <figure>
+                                <img src="assets/orientecho/user-sketch-2.png">
+                                <figcaption>User sketch 2.</figcaption>
+                            </figure>
+                        </div>
+                        
+                    
+                        <p>
+                            This approach was quite limited. VIPs process sensory information differently,
+                            depending on their experience with visual impairment. For example, screen reader
+                            users process information at a speed much faster than a sighted user could
+                            comprehend. Preferences also vary—some users favor verbal and semantic
+                            descriptions, while others rely more on sensory cues. While sighted user testing
+                            informed early iterations, future work must involve VIP participants to ensure
+                            the system truly aligns with their needs.
+                        </p>
+                        <h5>Iteration & Key Improvements</h5>
+                        <p>Refining Audio & Verbal Feedback</p>
+                        <ul>
+                            <li>
+                                <span class="bold">Challenge</span>: Users needed more actionable terrain
+                                details and struggled with interpreting audio pings.
+                            </li>
+                            <li>
+                                <span class="bold">Solution</span>: Added terrain and obstacle descriptions,
+                                onboarded users with clear verbal instructions, and combined distance feedback
+                                with sound cues.
+                            </li>
+                        </ul>
+
+                        <p>Enhancing Haptic Guidance</p>
+                        <ul>
+                            <li>
+                                <span class="bold">Challenge</span>: Users detected objects but couldn't judge
+                                distances well; low obstacles were hard to perceive.
+                            </li>
+                            <li>
+                                <span class="bold">Solution</span>: Upgraded to a Micro-LIDAR sensor, replaced
+                                stepped vibrations with smooth feedback, and added critical proximity alerts.
+                            </li>
+                        </ul>
+
+                        <p>Improving Navigation with Sound Beacons</p>
+                        <ul>
+                            <li>
+                                <span class="bold">Challenge</span>: Users wanted confirmation upon arrival and
+                                found volume changes ineffective for distance perception.
+                            </li>
+                            <li>
+                                <span class="bold">Solution</span>: Introduced a distinct destination sound and
+                                used frequency shifts for proximity cues.
+                            </li>
+                        </ul>
+
+                        <p>Optimizing Hazard Alerts</p>
+                        <ul>
+                            <li>
+                                <span class="bold">Challenge</span>: Users preferred directional guidance over
+                                simple warnings and needed alerts to match risk levels.
+                            </li>
+                            <li>
+                                <span class="bold">Solution</span>: Implemented automated hazard detection,
+                                added directional instructions (e.g., “Step left”), and adjusted alert intensity
+                                based on severity.
+                            </li>
+                        </ul>
+
+
+                        <div class="text-image-box">
+                            <div>
+                                <p>
+                                    The final designs are displayed at the top of this page. The final haptic
+                                    bracelet prototype and design featured linear feedback, where vibration
+                                    intensity increased with proximity, and pulsing was introduced for close-range
+                                    alerts. The final prototype included a wearable bracelet strap with a battery
+                                    for full usability.
+                                </p>
+                            </div>
+                            <img src="assets/orientecho/haptic-graph-2.png" class="image-column">
+                        </div>
+
+                        <div class="images-box">
+                            <img src="assets/orientecho/final-haptic-prototype-1.png">
+                            <img src="assets/orientecho/final-haptic-prototype-2.png">
+                        </div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div class="sticky-footer">
+            <div class="sticky-footer__inner">
+                <div class="sticky-footer__nav">
+                    <ul>
+                        <li class="heading">main</li>
+                        <li class="linked"><a href="index.html">home</a></li>
+                        <li class="linked"><a href="about.html">about</a></li>
+                    </ul>
+                    <ul>
+                        <li class="heading">contact</li>
+                        <li class="linked"> <a href="https://www.linkedin.com/in/cami-streuly-43b0b7281" target="_blank">linkedIn</a></li>
+                        <li class="linked"><a href="mailto:cstreuly@andrew.cmu.edu">email</a></li>
+                    </ul>
+                </div>
+                <h2 class="sticky-footer__title">cami <span id="footer-last-name">streuly</span></h2>
+            </div>
+        </div>
+         
+    
+    </body>
+</html>
