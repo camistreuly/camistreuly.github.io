@@ -59,7 +59,7 @@ if (window.location.pathname == "/index.html") {
     
 }
 // // Initial population
-// distributeProjects();
+distributeProjects();
 
 // // Update on resize
 window.addEventListener("resize", distributeProjects);
