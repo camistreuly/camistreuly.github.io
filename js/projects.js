@@ -260,7 +260,6 @@ function populateProjectPage() {
 
 
 if (window.location.pathname == "/project.html") {
-    console.log("check");
     populateProjectPage();
 }
 

@@ -54,13 +54,9 @@ function distributeProjects() {
     }
 }
 
-if (window.location.pathname == "/index.html") {
+if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
     distributeProjects();
-    
-}
-// // Initial population
-distributeProjects();
-
+  }
 // // Update on resize
 window.addEventListener("resize", distributeProjects);
 
