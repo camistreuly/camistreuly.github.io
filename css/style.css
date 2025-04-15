@@ -286,6 +286,11 @@ nav a:hover, #name:hover {
     transition: font-weight 0.3s ease, transform 0.3s ease;
   }
 
+.project-thumbnail:hover .thumbnail-image {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 8%), 0px 3px 9px 0px rgba(0, 0, 0, 30%);
+    transform: scale(1.004);
+}
+
 /* HEADER/HERO STYLING */
 #intro {
     display: flex;
@@ -463,10 +468,7 @@ h3#segue {
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.thumbnail-image:hover {
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 8%), 0px 3px 9px 0px rgba(0, 0, 0, 30%);
-    transform: scale(1.004);
-}
+
 
 @media (max-width: 800px) {
     .column {
