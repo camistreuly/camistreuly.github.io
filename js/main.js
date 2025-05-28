@@ -23,16 +23,9 @@ function distributeProjects() {
                 window.location.href = project.link;
             });
 
-            // Cycle through col-1 → col-2 → col-3
-            if (index == 9) {
-                 col2.appendChild(clone);
-            }
-            
-            else {
-                if (index % 3 === 0) col1.appendChild(clone);
-                else if (index % 3 === 1) col2.appendChild(clone);
-                else col3.appendChild(clone);
-            }
+            if (index % 3 === 0) col1.appendChild(clone);
+            else if (index % 3 === 1) col2.appendChild(clone);
+            else col3.appendChild(clone);
             
         });
     } else {

@@ -1,8 +1,8 @@
 const projects = [
     {
         id: 1, 
-        title: "OrientEcho",
-        thumbnail: "assets/project-images/orientecho.png", 
+        title: "Learning Management for BootUp",
+        thumbnail: "assets/project-images/bootup.png", 
         descriptionHTML: "",
         link: "project.html?id=1",
         detailed: true,
@@ -10,6 +10,24 @@ const projects = [
     },
     {
         id: 2, 
+        title: "Interviewing You & Me!",
+        thumbnail: "assets/project-images/interview.png", 
+        descriptionHTML: "",
+        link: "project.html?id=2",
+        detailed: true,
+        portrait: false
+    },
+    {
+        id: 3, 
+        title: "OrientEcho",
+        thumbnail: "assets/project-images/orientecho.png", 
+        descriptionHTML: "",
+        link: "project.html?id=3",
+        detailed: true,
+        portrait: false
+    },
+    {
+        id: 4, 
         title: "Music Experience Lab Website",
         thumbnail: "assets/project-images/MEL.png", 
         descriptionHTML: `<p>
@@ -31,21 +49,21 @@ const projects = [
                             Your browser does not support the video tag.
                         </video>
                         `,
-        link: "project.html?id=2",
+        link: "project.html?id=4",
         detailed: false,
         portrait: false
     },
     {
-        id: 3, 
+        id: 5, 
         title: "Bumble Smart Profile Assistant", 
         thumbnail: "assets/project-images/bumble.png",
         descriptionHTML: "DescriptionHTML coming soon.",
-        link: "project.html?id=3",
+        link: "project.html?id=5",
         detailed: true,
         portrait: false
     },
     {
-        id: 4, 
+        id: 6, 
         title: "Mindscape",
         thumbnail: "assets/project-images/mindscape.png", 
         descriptionHTML: `<p>
@@ -72,12 +90,12 @@ const projects = [
                             <source src="assets/mindscape-demo.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>`,
-        link: "project.html?id=4",
+        link: "project.html?id=6",
         detailed: false,
         portrait: false
     },
     {
-        id: 5, 
+        id: 7, 
         title: "Embodied Cognition in XR Design Model",
         thumbnail: "assets/project-images/conceptual.png", 
         descriptionHTML: `<p>
@@ -87,12 +105,12 @@ const projects = [
                             framework for making informed decisions when designing embodied digital
                             experiences.
                         </p>`,
-        link: "project.html?id=5",
+        link: "project.html?id=7",
         detailed: false,
         portrait: false
     },
     {
-        id: 6, 
+        id: 8, 
         title: "Hear Here (and There)",
         thumbnail: "assets/project-images/wonderears.png", 
         descriptionHTML: `<p>
@@ -120,12 +138,12 @@ const projects = [
                         <p>
                             More in-depth exploration for this project coming soon...
                         </p>`,
-        link: "project.html?id=6",
+        link: "project.html?id=8",
         detailed: false,
         portrait: false
     },
     {
-        id: 7, 
+        id: 9, 
         title: "TOVA: A mass extinction play",
         thumbnail: "assets/project-images/tovasmog.png", 
         descriptionHTML: `<p>
@@ -133,12 +151,12 @@ const projects = [
                             climate despair, technology, and human connection in the face of an impending
                             city-destroying flood.
                         </p>`,
-        link: "project.html?id=7",
+        link: "project.html?id=9",
         detailed: false,
         portrait: false
     },
     {
-        id: 8, 
+        id: 10, 
         title: "Soma in Silk Organza",
         thumbnail: "assets/project-images/soma.png", 
         descriptionHTML: `<p>
@@ -165,12 +183,12 @@ const projects = [
                             Beading wire <br>
                             Many marbles <br>
                         </p>`,
-        link: "project.html?id=8",
+        link: "project.html?id=10",
         detailed: false,
         portrait: true
     },
     {
-        id: 9, 
+        id: 11, 
         title: "Noisy Mobile",
         thumbnail: "assets/project-images/noisymobile.png", 
         projectPageVideo: `<video controls loop>
@@ -185,16 +203,16 @@ const projects = [
                             acceleration value dynamically detunes each voice at different rates, meaning
                             that tilting the mobile subtly alters its harmonic structure.
                         </p>`,
-        link: "project.html?id=9",
+        link: "project.html?id=11",
         detailed: false,
         portrait: true
     },
     {
-        id: 10, 
+        id: 12, 
         title: "TOVA: A mass extinction play",
         thumbnail: "assets/project-images/tovaboat.png", 
         descriptionHTML: "",
-        link: "project.html?id=7",
+        link: "project.html?id=9",
         detailed: false,
         portrait: false
     }
@@ -232,12 +250,12 @@ function populateProjectPage() {
         document.getElementById("project-title").textContent = project.title;
 
         // if project is tova, fill in images with both tova posters (shared project page, separate links)
-        if (projectId == 7) {
+        if (projectId == 9) {
             document.getElementById("project-images").innerHTML = `<img src="assets/project-images/tovasmog.png"> <img src="assets/project-images/tovaboat.png">`
             document.getElementById("project-image").remove();
         }
 
-        else if (projectId == 9) {
+        else if (projectId == 11) {
             document.getElementById("project-video").innerHTML = project.projectPageVideo;
             document.getElementById("project-image").remove();
         }

@@ -52,6 +52,11 @@
     font-size: 0.875rem; /* text-sm */
   }
   
+  .sticky-footer__nav ul {
+    list-style-type: none;
+    list-style-position: inside; 
+  }
+  
   @media (min-width: 640px) { /* sm breakpoint */
     .sticky-footer__nav {
       gap: 4rem;   /* sm:space-x-16 => 4rem */
@@ -154,6 +159,14 @@ header p {
     margin: 0px;
 }
 
+p.subheading {
+    margin: 25px 0px 10px;
+}
+
+b {
+ font-weight: 500;
+}
+
 h1 {
     font-weight: 300;
     font-size: 80px;
@@ -203,6 +216,7 @@ header {
 img {
     max-width: 100%;
     /* padding: 20px 0px; */
+    border-radius: 5px;
 }
 
 figcaption {
@@ -213,7 +227,7 @@ figcaption {
 }
 
 figure {
-    margin: 0px;
+    margin: 7px 0px;
 }
 
 figure img {
@@ -227,8 +241,9 @@ figure img {
 
 
 .bold {
-    font-weight: 600;
+    font-weight: 500;
 }
+
 
 .list-start {
     margin-bottom: 5px;
@@ -237,10 +252,15 @@ figure img {
 
 ul {
     margin-top: 0px;
+    list-style-type: disc;
+    list-style-position: outside; 
+    padding-left:  45px;
+
 }
 
 ol {
-    padding: 5px 0px 15px 40px;
+    padding: 15px 0px 15px 40px;
+    list-style-type: decimal;
 }
 
 li {
@@ -607,6 +627,20 @@ h3#segue {
     object-fit: contain; /* Ensures the whole image fits */
 }
 
+.images-box figure img {
+    max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    .images-box {
+        flex-direction: column;
+    }
+
+    .images-box img {
+        max-width: 100%;
+    }
+}
+
 img.process-image {
     display: block;
     max-width: 70%;
@@ -698,12 +732,12 @@ video.video-demo, .square {
 
 .unbulleted {
     list-style-type: none;
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     padding-left: 30px;
 
 }
 
-.unbulleted li {
+.unbulleted > li {
     margin: 10px 0px;
 }
 
@@ -841,8 +875,8 @@ h5.less-margin {
 .figure-box {
     display: flex;
     justify-content: space-between; /* Ensures equal spacing between figures */
-    align-items: flex-end; /* Aligns figures at the top */
-    gap: 20px; /* Adds spacing between figures */
+    /* align-items: flex-end; */
+    gap: 5px;
     flex-wrap: wrap; /* Allows wrapping if necessary */
     padding: 20px 0px;
 }
@@ -851,7 +885,7 @@ h5.less-margin {
     display: flex;
     flex-direction: column; /* Ensures image and caption stack */
     text-align: center; /* Centers caption text */
-    max-width: 30%; /* Limits width to keep equal spacing */
+    max-width: 32.5%; /* Limits width to keep equal spacing */
     
 }
 
@@ -860,7 +894,7 @@ h5.less-margin {
     .figure-box {
         flex-direction: column; /* Changes to a vertical layout */
         align-items: center; /* Centers figures in column mode */
-        padding: 50px;
+        /* padding: 50px; */
     }
 
     .figure-box figure {
@@ -912,4 +946,41 @@ video::-webkit-media-controls-panel {
 /* Dark grey controls (play button, volume, timeline) */
 video::-webkit-media-controls {
     filter: invert(1);
+}
+
+/* BOOTUP */
+.tablet-mobile-box {
+    display: flex;
+    width: 100%;  
+    gap: 10px;
+    /* align-items: stretch;  */
+    padding: 10px 0px;
+    justify-content: space-evenly;
+  }
+  
+.tablet-mobile-box video {
+    /* display: flex; */
+    width: 72%;
+}
+
+.tablet-mobile-box img {
+    /* flex: 1 1 0;  */
+
+    width: 25%;
+    height: auto;
+    /* object-fit: cover; */
+
+    
+}
+
+@media (max-width: 650px) {
+    .tablet-mobile-box img {
+        display: none;
+    }
+
+    .tablet-mobile-box video {
+        /* display: flex; */
+        width: 100%;
+    }
+    
 }
