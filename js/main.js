@@ -1,13 +1,13 @@
 const col1 = document.getElementById("col-1");
 const col2 = document.getElementById("col-2");
-const col3 = document.getElementById("col-3");
+// const col3 = document.getElementById("col-3");
 const template = document.getElementById("project-template");
 
 
 function distributeProjects() {
     col1.innerHTML = "";
     col2.innerHTML = "";
-    col3.innerHTML = "";
+    // col3.innerHTML = "";
 
     if (window.innerWidth > 800) {
         // Distribute across three columns
@@ -23,9 +23,9 @@ function distributeProjects() {
                 window.location.href = project.link;
             });
 
-            if (index % 3 === 0) col1.appendChild(clone);
-            else if (index % 3 === 1) col2.appendChild(clone);
-            else col3.appendChild(clone);
+            if (index % 2 === 0) col1.appendChild(clone);
+            else if (index % 2 === 1) col2.appendChild(clone);
+            // else col3.appendChild(clone);
             
         });
     } else {
