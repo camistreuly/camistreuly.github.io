@@ -3,7 +3,6 @@
 
 
 
-
 /* STICKY FOOTER STYLING ######################################################################### */
 
 .main {
@@ -139,7 +138,7 @@ h2.sticky-footer__title {
 /* ############################################################################ */
 /* GENERAL TEXT STYLING */
 body {
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     /* font-optical-sizing: auto; */
     font-weight: 250;
     font-style: normal;
@@ -235,8 +234,8 @@ figure img {
 }
 
 #name {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 350;
 }
 
 
@@ -284,10 +283,15 @@ nav {
     /* background-color: #EFEFEF; */
     /* background: linear-gradient(0deg, rgba(239, 239, 239, 0%) 0%, rgba(239, 239, 239, 0.802) 100%); */
     z-index: 3;
-    background: linear-gradient(0deg, rgba(239, 239, 239, 0%) 0%, rgba(255, 255, 255, 0.802) 100%);
-    
-
+    background: linear-gradient(0deg, transparent 0%, rgb(255, 255, 255, 100%) 100%);
+    /* backdrop-filter: blur(2px); */
 }
+
+nav {
+    backdrop-filter: blur(8px);
+    mask: linear-gradient(black 55%, transparent);
+}
+
 
 #work-play {
     display: flex;
@@ -324,20 +328,21 @@ nav a:hover, #name:hover {
 
 #bio {
     margin: 25px 0px 25px 0px;
-    max-width: 900px;
+    max-width: 800px;
     /* align-self: flex-end; */
     font-weight: 400;
 }
 
 #bio p {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px;
     /* margin-bottom: 20px; */
 }
 
 #bio #bio-paragraph {
     margin-bottom: 15px;
+    line-height: 145%;
 }
 
 #cami {
@@ -444,7 +449,7 @@ h2.karla {
 
 h3#segue {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .title p {
@@ -588,13 +593,13 @@ h3#segue {
 
 #project-title {
     font-size: 40px;
-    font-weight: 500;
+    /* font-weight: 500; */
     padding: 30px 0px 30px 0px;
 }
 
 #project-title-with-sub {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 350;
     margin-bottom: 15px;
     margin-top: 27px;
 }
